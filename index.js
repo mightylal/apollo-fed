@@ -5,6 +5,7 @@ const gateway = new ApolloGateway({
     serviceList: [
         { name: "leads", url: "http://localhost:4001/graphql" },
         { name: 'accessories', url: 'http://localhost:4002/graphql' },
+        { name: 'products', url: 'http://localhost:4003/graphql' },
     ]
 });
 
