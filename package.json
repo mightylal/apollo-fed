@@ -1,0 +1,21 @@
+{
+  "name": "federation-demo",
+  "main": "index.js",
+  "scripts": {
+    "start-gateway": "nodemon index.js",
+    "start-service-leads": "nodemon services/leads/index.js",
+    "start-service-accessories": "nodemon services/accessories/index.js",
+    "start-services": "concurrently \"npm:start-service-*\"",
+    "postinstall": "lerna bootstrap"
+  },
+  "devDependencies": {
+    "lerna": "latest",
+    "nodemon": "latest",
+    "concurrently": "latest"
+  },
+  "dependencies": {
+    "@apollo/gateway": "latest",
+    "apollo-server": "latest",
+    "graphql": "latest"
+  }
+}

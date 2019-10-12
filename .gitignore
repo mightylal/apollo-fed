@@ -1,0 +1,7 @@
+/node_modules
+/services/accessories/node_modules
+/services/leads/node_modules
+/services/pricing/node_modules
+/services/products/node_modules
+/services/taxes/node_modules
+/services/vehicles/node_modules
