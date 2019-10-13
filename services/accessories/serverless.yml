@@ -1,0 +1,16 @@
+service: micro-graphql-accessories
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: dev
+  region: us-west-2
+
+functions:
+  app:
+    handler: index.handler
+    # Add the following lines:
+    events:
+      - http:
+          path: graphql
+          method: any
