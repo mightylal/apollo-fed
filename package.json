@@ -7,6 +7,7 @@
     "start-service-accessories": "nodemon services/accessories/index.js",
     "start-service-products": "nodemon services/products/index.js",
     "start-service-taxes": "nodemon services/taxes/index.js",
+    "start-service-pricing": "nodemon services/pricing/index.js",
     "start-services": "concurrently \"npm:start-service-*\"",
     "postinstall": "lerna bootstrap"
   },
